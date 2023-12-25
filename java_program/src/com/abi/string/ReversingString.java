@@ -2,23 +2,22 @@ package com.abi.string;
 
 public class ReversingString {
     public static void main(String[] args) {
-        char [] res = reverseGivenString("H E L L O".toCharArray());
-        System.out.println(res);
+        char [] str = reverseGivenString("H E L L O".toCharArray());
+        System.out.println(str);
 
     }
 
     private static char []  reverseGivenString(char [] str){
-         char [] res = str;
          int left= 0;
-         int right = res.length-1;
+         int right = str.length-1;
          while(left <right){
-             char  temp = res[left];
-             res[left] = res[right];
-             res[right] = temp;
+             char  temp = str[left];
+             str[left] = str[right];
+             str[right] = temp;
              left++;
              right--;
 
          }
-        return res;
+        return str;
     }
 }
