@@ -1,4 +1,4 @@
-package com.abi.trees;
+package com.abi.trees.binaryTree;
 
 public class BinaryTreeNode {
 
